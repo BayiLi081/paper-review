@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Personal Presentation</title>
+    <title>Bayi's academic repo</title>
     <link href="imgs/logo.svg" rel="icon" type="image/svg"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
@@ -19,13 +19,24 @@
       h1, h2, h3, h4, h5, h6 {
         font-family: 'Droid Serif';
         font-weight: normal;
-        margin: 0;
-        padding: 0;
+        margin: 0em;
+        padding: 0em;
+        margin-bottom: 15px !important; 
       }
 
-      h1 { font-size: 3.5em; }
-      h2 { font-size: 3em; }
-      h3 { font-size: 1.6em; }
+      h1 { 
+        font-size: 2.5em;
+        color: #00A6D6;
+        font-weight: bold;
+      }
+      h2 { 
+        font-size: 1.6em;
+        color: #00A6D6;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 1.3  em;
+      }
       h4 { font-size: 1.2em; }
       h5 { font-size: 1em; }
       h6 { font-size: 0.8em; }
@@ -36,23 +47,19 @@
         text-shadow: 0 0 20px #333;
       }
       .inverse h1, .inverse h2 {
-        color: #f3f3f3;
+        color: #00A6D6;
         line-height: 0.8em;
       }
-
-      pre {
-        border-left: 0.4em solid #d7d7d7;
-        padding: 1em !important;
-      }
       code {
-        background: transparent !important;
+        word-wrap: break-word;
+        white-space:pre-wrap;
       }
       a {
-        color: #F92672;
-        text-decoration: none;
+        color: #777872;
+        text-decoration: underline;
       }
       strong {
-        color: #F92672;
+        color: #00A6D6;
         text-decoration: none;
       }
       keyword {
@@ -78,6 +85,13 @@
 
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
+      .image-50 img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
       .image-60 img {
         display: block;
         margin-left: auto;
@@ -96,23 +110,36 @@
           text-align: left;
         }
 
-      #slideshow .slide .content code { font-family: 'Consolas', monospace; font-size: 24px; }
-      code { position: relative; text-align: left; }
-      code .function {color: #900;}
+      #slideshow .slide .content { font-family: 'Consolas', monospace; font-size: 24px; }
       iframe { border: 0; width: 100%; }
     </style>
   </head>
   <body>
     <textarea id="source">
+
 class: top, left
-
-
 
 <!-- Page 1.1 -->
 
-### Content
+# Academic review collection
 
-**Research Topic**: simulating urbanisation patterns and interpreting the processes with multiple mechanisms
+Bayi Li
+
+## Research structure
+
+You can find other literature review information on other pages:
+
+- [Techniques for Systematic Literature Review](https://www.bayi.in/sys-lit-review)
+
+## Working title
+
+**Review of the interconnetion of residential choice, economic mobility and segregation in agent-based models**
+
+or
+
+**The use of agent-based modeling for studying the formation of segregation pattern from residential and economic mobility**
+
+<!-- **Using agent-based modelling to interpret the roles of residential and economic mobility in segregation** -->
  
 ???
 
@@ -122,97 +149,203 @@ The article simulated the urbanisation process and try to interpret it with test
 
 <!-- Page 1.2 -->
 
-### Content
+## Searching methods
 
-Research Topic: simulating urbanisation patterns and interpreting the processes with multiple mechanisms
+### Database
 
-**Case Study**: simulate the evolution of cities during the Soviet and post-Soviet periods
+We performed a search for relevant articles in the following databases:
+
+Comprehensive databases:
+
+- [Web of Science](https://www.webofscience.com/wos/woscc/advanced-search)
+
+- [Scopus](https://www.scopus.com/search/form.uri?display=advanced)
+
+- [ScienceDirect](https://www.sciencedirect.com/search/entry)
 
 ???
 
-Especially, it focus on a system of cities of the former souveit union before and after the clash.
+Computer science disciplines:
+
+- [SPRINGER LINK](https://link.springer.com/)
+
+- [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
 
 ---
 
-<!-- Page 1.3 -->
+<!-- Page 1.2 -->
 
-### Content
+## Searching methods
 
-Research Topic: simulating urbanisation patterns and interpreting the processes with multiple mechanisms
+### Categories of search terms (CST)
 
-Case Study: simulate the evolution of cities during the Soviet and post-Soviet periods
+- CST1: to identify articles that use agent-based modelling methods.
 
-**Research Question**:
+  ```sql
+  (("agent-based" AND simulation*) OR ("agent-based" AND model*) OR ("agent-based" AND system*) OR ("individual-based" AND simulation*) OR ("individual-based" AND model*) OR ("individual-based" AND system*) OR ("multi-agent" AND simulation*) OR ("multi-agent" AND model*) OR ("multi-agent" AND system*))
+  ```
 
-- Which is the best model (parsimonious and accurate)?
+- CST2: 
 
-- Which are the essential mechanisms?
+  ```sql
+  ((("residential" OR "household" OR "housing") AND ("mobility" OR "movement")) OR "relocation" OR (("residential" OR "housing") AND ("choice" OR "location choice")) OR "migration")
+  ```
 
-- What are the cities that resist modelling?
+- CST3: 
 
-???
+  ```sql
+  (("*economic" OR "*income*" OR "wealth") AND "mobility")
+  ```
 
-It surrounds the research question of finding the best model from thousands of possible model alternatives. Also the essential mechanisms to compose the model. And how the individual city performed in the model.
+- CST4: 
+
+  ```sql
+  ("segregation" OR "isolation" OR "division" OR "disparity" OR "uneven" OR "*equity" OR "*equality" OR "*equal" OR "segregated" OR "*justice" OR "stratification")
+  ```
+
+One term from CST1 must be used in combination of at least one term from CST2, CST3 or CST4
 
 ---
 
-<!-- Page 1.4 -->
+<!-- Page 1.2 -->
 
-### Content
+## Searching methods
 
-Research Topic: simulating urbanisation patterns and interpreting the processes with multiple mechanisms
+### Search syntax
 
-Case Study: simulate the evolution of cities during the Soviet and post-Soviet periods
+We set the expression "urban\* OR city". (\* expands the search to include variations of urban, e.g., urbanisation and urbanism)
 
-Research Question:
+Deriving a more focused result was accomplished by limiting the search to the following subject categories in databases: Environmental Studies, Geography, Urban Studies and Economic Studies.
 
-- Which is the best model (parsimonious and accurate)?
+The search syntax consists of three groups of keywords:
 
-- Which are the essential mechanisms?
+- The first set zeroes in on papers that pertains to 
 
-- What are the cities that resist modelling?
+- The second one aims to delineate publications that engage agent-based modelling.
 
-**Methodology**:
+- The last one 
 
-- A multimodelling framework to equifinality
-
-- A modular agent-based model which leads to the single historical trajectory
-
-- Comparing the performance of different model structures
-
-- multi-calibration: different subpopulations find best performing model combination of mechanisms
+Their intersection signifies the focus of our review.
 
 ???
 
-The method applied in this study is based on multimodelling framework. First structre a modulised agent-based model, so it can form into different model structures. Finding the best fit model to reproduce the empirical pattern and comparing across different model structures. Also the multi-calibration with niching method is applied to calibrate model at once.
+---
+
+## Searching methods
+
+### Inclusion criteria
+
+<!-- 货运运输是运输部门温室气体（GHG）和噪声污染的最大贡献者之一。由于空间差异很大，该行业的不利影响并未平等分布，少数族裔和低收入人口更容易居住在与货运相关的设施和卡车路线附近。但是，关注货运运输的股权分析是有限的，因为经验分析需要昂贵的数据收集过程，并且大规模领域的分析具有挑战性。这项研究的主要目的是使用基于大规模代理的仿真框架对货运相关旅行在亚特兰大 - 奇塔诺加 - 诺克斯维尔地区的影响进行公平分析。主要结果表明，在噪音和温室气体排放方面，低收入（不到$ 52K）和更严重的非白人人口社区是处于弱势社区。本文提出的结果和方法可用于提供大型网络中运输公平和社会正义分析的工具，并可用于制定政策和法规，以减少货运运输对弱势群体人口的影响。 -->
+<!-- 本文利用基于代理的运输模拟来分析大柏林大都会地区道路交通噪音的示例环境权益问题。我们研究噪声暴露的分布和与单个药物相关的因果关系。此外，分析了社区层面的空间模式。结果证实了基于代理的模型对股权分析的适用性，因为它们可以代表详细的暴露和因果关系水平。我们发现，噪声的因果关系比暴露的分布更加不平等。此外，郊区环境倾向于在大都市城市引起噪音的大量份额。 -->
+<!-- 智能增长（SG）是一种可持续城市发展的方法，它出现了限制大都市城市蔓延的弊端。这种方法通过涵盖微观和宏观水平的政策来增强社会公平和环境正义，此外，它讨论了可持续性方面。但是，很少有尝试模拟在不同情况下应用SG原理对新兴行为的影响。这项研究旨在启动一个平台，用于建立基于SG代理的模型SGABM，该平台侧重于社会行为，以帮助管理增长动态并为城市设施管理构建信息数据库。本文审查了文献，并就步行性原则进行了申请 -->
+<!-- 全世界许多人都在家里呆了几个月，并练习了社会疏远以减轻冠状病毒的传播（Covid-19）。现在至少有180个国家 /地区可能是一个案件。初步调查表明，Covid-19的大流行使人们感到比以前更加孤独和孤立。这可能是由于对病毒的恐惧，亲人的死亡以及某些国家施加的锁定限制。本文提出了一个参数多代理模拟框架，以模仿大流行期间的社会隔离。使用拟议的模拟器，我们模仿144 km2的现实世界区域，人口规模为200,000，以便具有接近准确的环境。考虑了各种参数，例如医院的数量和能力，感染率，恢复，住院和死亡。模拟在现实世界规模的人工社会上进行了验证，并在很大程度上进行了参数以模拟各种设置。 -->
+<!-- 例如为什么这个被included -->
+
+- Be written in English
+
+- Document type is article, proceeding paper or book chapters
+
+- Use agent-based modelling or agent-based simulation as tools
+
+- Contain residential mobility or economic mobility or segregation research
+
+- Focus on the one of the following research areas:
+
+  Business Economics, Environmental Sciences Ecology, Computer Science, Geography, Public Adminstration, Social Sciences, Urban Studies, Sociology, Demography, Decision Science
+
+- Focus on cities or including both cities and rural area at least
+
+- At least one spatial mechanism is invloved (e.g., only depression and income inequality will be removed)
+
+???
+
+---
+
+### Residential mobility and agent-based modelling
+
+**Search syntax**
+
+- For [Web of Science database (WoS)](https://www.webofscience.com/wos/woscc/advanced-search):
+
+  ```sql
+  (TI = (("agent-based" AND simulation*) OR ("agent-based" AND model*) OR ("agent-based" AND system*) OR ("individual-based" AND simulation*) OR ("individual-based" AND model*) OR ("individual-based" AND system*) OR ("multi-agent" AND simulation*) OR ("multi-agent" AND model*) OR ("multi-agent" AND system*))) AND (TS = (("segregation" OR "isolation" OR "division" OR "disparity" OR "uneven" OR "*equity" OR "*equality" OR "*equal" OR "segregated" OR "*justice" OR "stratification") OR ((("residential" OR "household" OR "housing") AND ("mobility" OR "movement")) OR "relocation" OR (("residential" OR "housing") AND ("choice" OR "location choice")) OR "migration"))) AND (SU ==("COMPUTER SCIENCE" OR "SOCIOLOGY" OR "SOCIAL SCIENCES OTHER TOPICS" OR "ENVIRONMENTAL SCIENCES ECOLOGY" OR "GEOGRAPHY" OR "MATHEMATICAL METHODS IN SOCIAL SCIENCES" OR "PUBLIC ADMINISTRATION" OR "URBAN STUDIES" OR "DEMOGRAPHY")) AND LA=(English) AND DT = ("Article" OR "Proceeding Paper" OR "Book Chapters")
+  ```
+---
+
+### Residential mobility and agent-based modelling
+
+**Search syntax**
+
+- For [Scopus database](https://www.scopus.com/search/form.uri?display=advanced):
+
+  ```sql
+  TITLE ( ( "agent-based" AND simulation* ) OR ( "agent-based" AND model* ) OR ( "agent-based" AND system* ) OR ( "individual-based" AND simulation* ) OR ( "individual-based" AND model* ) OR ( "individual-based" AND system* ) OR ( "multi-agent" AND simulation* ) OR ( "multi-agent" AND model* ) OR ( "multi-agent" AND system* ) ) AND TITLE-ABS-KEY(("segregation" OR "isolation" OR "division" OR "disparity" OR "uneven" OR "*equity" OR "*equality" OR "*equal" OR "segregated" OR "*justice" OR "stratification") OR (("residential" OR "household" OR "housing") AND ("mobility" OR "movement")) OR (("residential" OR "housing") AND ("choice" OR "location choice")) OR "relocation" OR "migration" OR ( "*economic" OR "*income*" OR "wealth" ) AND "mobility" ) AND SUBJAREA (ENVI OR arts OR busi OR deci OR econ OR soci OR comp ) AND DOCTYPE ( ar OR cp OR bk OR ch ) AND LANGUAGE(english)
+  ```
+---
+
+### Residential mobility and agent-based modelling
+
+**Search syntax**
+
+- For ScienceDirect database:
+
+  > ScienceDirect does not support complete search syntax and limit its boolean connectors under 8. Thus, we conduct the search seperately by CST group 2-4.
+
+  - For [CST1 and CST2](https://www-sciencedirect-com.tudelft.idm.oclc.org/search?title=%28%20%22agent-based%22%20OR%20%22individual-based%22%20OR%20%22multi-agent%22%29%20AND%20%28%22simulation%22%20OR%20%22model%22%20OR%20%22system%22%29&tak=%28%22residential%22%20OR%20%22household%22%20OR%20%22housing%22%29%20AND%20%28%22mobility%22%20OR%20%22movement%22%20OR%20%28%22choice%22%20or%20%22location%20choice%22%29%29%20OR%20%22relocation%22%20OR%20%22migration%22&show=100&articleTypes=FLA&lastSelectedFacet=subjectAreas&subjectAreas=2300%2C1700%2C3300%2C2200%2C2600%2C1900%2C1800%2C2000)
+
+  - For [CST1 and CST3](https://www-sciencedirect-com.tudelft.idm.oclc.org/search?title=%28%20%22agent-based%22%20OR%20%22individual-based%22%20OR%20%22multi-agent%22%29%20AND%20%28%22simulation%22%20OR%20%22model%22%20OR%20%22system%22%29&tak=%28%28%22economic%22%20OR%20%22income%22%20OR%20%22wealth%22%29%20AND%20%22mobility%22%29&subjectAreas=3300%2C1700%2C2300%2C1800&lastSelectedFacet=subjectAreas)
+
+  - For [CST1 and CST4](https://www-sciencedirect-com.tudelft.idm.oclc.org/search?tak=%22segregation%22%20OR%20%22isolation%22%20OR%20%22division%22%20OR%20%22disparity%22%20OR%20%22equity%22%20OR%20%22equality%22%20OR%20%22equal%22%20OR%20%22segregated%22%20OR%20%22stratification%22&title=%28%20%22agent-based%22%20OR%20%22individual-based%22%20OR%20%22multi-agent%22%29%20AND%20%28%22simulation%22%20OR%20%22model%22%20OR%20%22system%22%29&articleTypes=FLA%2CCH&lastSelectedFacet=subjectAreas&subjectAreas=1700%2C3300%2C2300%2C2000)
+
+???
+
+To further merging and cleaning, we downloaded all attributes of literature as the format the library requires. In WoS, selected "full records" as Tab Delimited File. In Scopus, selected "selected all information" as a csv file. In ScienceDirect, selected "selected all information" as a RIS file.
 
 ---
 
 <!-- Page 2 -->
 
-### Research Contribution
+## Clean Records
 
-- Testing the hypothesis of urbanisation processes virtually
-
-- Increasing the flexibility and diversity by integrating complex mechanisms into a modular model building
-
-- Calibrating large amount of models contaning a mass cities and long time periods
-
-- Intepreting cities with empirical knowledge
-
-- Identifing the actual causal mechanisms from result analysis
+.image-50[![](imgs/PRISMAflowchart_v2.svg)]
 
 ???
 
-First, the research is able to simulate urbanisation processes virtually. And it integrated multiple mechanisms, and create a modular ABM, enabling an incremental creation of different model structures. Calibration is always the challenge of ABM. This study also contributes to calibrating large amount of models contaning mass cities and long time periods. So at the end, we can intepret cities with empirical knowledge and identify the actual causal mechanisms from result analysis.
+---
+
+<!-- Page 2 -->
+
+## Indetify topics
+
+.image-50[![](imgs/classificationclusters.svg)]
+
+???
 
 ---
 
 <!-- page 3 -->
 
-#### Research Framework and Methods
+#### Notes
 
-![research framework](./imgs/research_framework.svg)
+- Economic variables usually included as affordability
+
+- Economic-related discussion is normally discussed as contributing mechnism (x)
+
+- The process of "social climbing" (improvement of socioeconomic status from non-spatial factors) was rarely discussed 
+
+- The household dynamics (such as life course or life cycle) were not modelled sufficiently, most of times, its settled at start and remain stable through the whole simulation
+
+- The spatial variation of opportunites exposure is widely investigated and modelled, but the aftermath and following implication on further mobility or migration were not fully discussed.
+
+- Segregation is observed as final outcomes, not constant dynamic pattern.
+
+- The development of city (provide more opportunities and housing or another specific pattern such as urban sprawl) was rarely considered. (The environment in ABMs always unchanged.)
+
+- Most segregation models focus on ethinical segregation, maybe also the reason that economic mobility is not valued in the model
+
+- In the economic ABM, investment is more frequent
+
+<!-- ![research framework](./imgs/research_framework.svg) -->
 
 ???
 
@@ -253,53 +386,10 @@ A seperation of cities into different groups based on their similarity might opt
 
 <!-- page 6.1 -->
 
-#### Reproducibility in the model of urban economic segregation
+### Tool
 
-<!-- **If you were to use this same approach to build a model of urban economic segregation, what definitions would you use for urban segregation and for economic inequality? How would these definitions impact the type of agents and of processes included in the model?** -->
+NetLogo, as the commonly acknowledged tool, is widely applied in the collection. When it comes to transportation, MatSIM is more founded. There also several models build by Python. Or very few used their own developed tools.
 
-- Urban economic segregation: The measurement can be based on level of dissimilarity in income and wealth within a neighborhood.
-
-- Assumption: The intensify or reduce of segregation is caused by human migration or endogenous the wealth increases.
-  
-  - Urbanisation: the attractiveness of city to exogenous migrant, correlated with the economic development of the city  
-
-  - Site Effects: the resouces and amenities that are available in a particular residence.
-  
-  - Workplace proximity: the distance between the residence and workplace.
-
-      lower income people might have higher tolerance to commute time while higher income people might have preference of private transportation which is also less sensitive to distance.
-
-  - Living cost effects: the cost of living in a particular residence (Housing prices + other living cost)
-
-  - Housing Policies interferences: top-down policies regulating effects (mix-income housing, rent control or non-regulating housing market, etc.)
-
-  - Planning interferences: planning development (urban renewal, replanning, etc.)
-
-  - Migration cost: the cost of moving to a new residence (fixed cost + varied cost by accumulated living years in the current residence)
-
-???
-
-The definition of urban economic segregation is the degree of separation between different groups of people in income or wealth in a neigbourhood. The measurement of segregation can be based on level of dissimilarity in income and wealth within a neighborhood. 
-
-Also from my opinion, the direct cause of economic imbalance is from the migration, which included inner-city and cross-city migration of residents. And also the self development and increase on wealth.
-
-The outsourced migration might come from overall increase of economic development of the city, and the inter-city migration might come from the balance of living cost and living benefits. Also some sudden migration might come from replanning or urban renewal.
-
----
-
-<!-- page 7 -->
-
-#### Reproducibility
-
-- Agents: households
-
-- Research Unit: neighborhood
-
-- Processes: migration to pursue a better living benefits.
-
-- Building blocks: site effects, workplace proximity, etc.
-
-![building blocks](./imgs/proposedmechanism.svg)
 
 ???
 
@@ -327,7 +417,7 @@ From
 
 <!-- page 7 -->
 
-#### Others
+## Causal inference by agent-based modelling
 
 Related parts:
 
