@@ -134,19 +134,18 @@ Bayi Li
 
 [Over all research structure](https://raw.githubusercontent.com/BayiLi081/ABM-Economic-Inequality/main/research_design/architecture/ResearchDesignStructure.svg?token=GHSAT0AAAAAACERVRCXMCNSRL7HPXWFJPXMZFL3PBQ) (The url should grant the access to the file. Otherwise, open ABM-Economic-Inequality/main/research_design/architecture/ResearchDesignStructure.svg in this order after visiting [the original repo](https://github.com/BayiLi081/ABM-Economic-Inequality))
 
+The full ongoing report on the question, design and implemention of the project can be found at [ABM-Economic-Inequality
+/slides/](https://github.com/BayiLi081/ABM-Economic-Inequality/tree/main/slides). (Private repo currently, download the folder and open the index.html at local broswer)
+
 You can find other literature review information on other pages:
 
-- [Techniques for Systematic Literature Review](https://www.bayi.in/sys-lit-review)
+- [Techniques for Systematic Literature Review](https://www.bayi.in/sys-lit-review) (Not updated currently)
 
-- [Individual paper review and reflection](spe-paper/index.html)
+- [Individual paper review and reflection](spe-paper/index.html) (updating recurrently)
 
 ## Working title
 
-**Review of the interconnetion of residential choice, economic mobility and segregation in agent-based models**
-
-or
-
-**The use of agent-based modeling for studying the formation of segregation pattern from residential and economic mobility**
+**Review of the interconnetion of residential choice, economic mobility and segregation in agent-based models** or **The use of agent-based modeling for studying the formation of segregation pattern from residential and economic mobility**
 
 <!-- **Using agent-based modelling to interpret the roles of residential and economic mobility in segregation** -->
  
@@ -362,7 +361,7 @@ The authours constructed form multi generic mechanisms, combining with baseline 
 
 ## Full paper review
 
-[Paper evaluation form](https://forms.gle/29SCitDJCe5mzP9h8)
+[Paper evaluation online google form](https://forms.gle/29SCitDJCe5mzP9h8)
 
 ---
 
@@ -370,17 +369,35 @@ The authours constructed form multi generic mechanisms, combining with baseline 
 
 NetLogo, as the commonly acknowledged tool, is widely applied in the collection. When it comes to transportation, MatSIM is more founded. There also several models build by Python. Or very few used their own developed tools.
 
+### Model efficiency
+
+The modelling scale will not be upscaled to national level until later phase of PhD, but it is worth to record any technical inspiration during the literature reading.
+
+#### High-Level architecture
+
+
+
 ???
 
 From 
 
 ---
 
+<!-- behaviour rule -->
+
 ## About the rule behaviour rule formation
 
 ### Using Qualitative Data to Inform Behavioural Rules
 
 REF: [SIG-Qual2Rule: Using Qualitative Data to Inform Behavioural Rules](http://www.essa.eu.org/sig/sig-qual2rule/) and []()
+
+### The norms in simulation
+
+#### The violation/breach of norms
+
+In Frank Dignum's work of modelling norms in the simulation (To do: find the exact publication):
+
+> We have used both "needs" and "values"to model these criteria. I am not claiming a validity of either of these for all circumstances, but rather show that one can model some phenomena in a natural way using these concepts. E.g. it generated a violation of quarantine norms during covid more frequently during weekends and also more frequent after more time has passed by. Of course, once one has established the pattern one can use this explicitly to model it. But the fact was that we were not aware of this pattern beforehand and observed it from the model and subsequently also saw it in reality. I would say that this is a case where the model has been usefull. Even though I would not claim it is "valid" in a classical sense (which I think is something we should forget about anyway).
 
 
 ---
@@ -395,6 +412,9 @@ This insights might not be gained through this SLR, as this SLR is only focus on
 
 ### Cons
 
+> Of course, such contribution is helpful only because ABM can capture some aspect/mechanism/heterogeneity that is missing in the existing models/theories/conjectures but worth to be emphasized. From the technical perspective, ABM provides a specific data structure (e.g., agents with heterogeneous attributes and decision-making rules) and can implement some specific algorithm (e.g., interaction, adaptation, and learning) more flexibly. As a result, by using ABM, some observed stylized facts are reproduced in a more simple and transparent way, hopefully, also in a more convincing (elegant) way. Sometimes, it could also be unobserved dynamics of the system which could happen when some conditions are satisfied (i.e., ABM working as a warning detector).
+
+> Yu Songmin of Fraunhofer Institute for Systems and Innovation Research (Germany)
 
 ???
 
@@ -421,11 +441,13 @@ Summary from the long email forum from SIMSOC email group
 
 ## The key of understanding in Agent-based models
 
-> using the model to understand the target phenomenon.
+> using the model to understand the target phenomenon. or using the model to improve our understanding the target phenomenon.
 
 Is the understanding gained through a "theory-formation" approach? (REF: [Explaining the Emerging Influence of Culture, from Individual Influences to Collective Phenomena](https://www.jasss.org/21/4/11.html))
 
 Does the model provide (additional) insights for elaborating a (new/better/more validated) theory in regards to the target system?
+
+It could also be used to falsify some theories. For example, the phenomenon could possible be formed without certain mechanism as well.
 
 ### Layering model to extend our understanding
 
@@ -448,13 +470,9 @@ REF: [THE INEVITABLE “LAYERING” OF MODELS TO EXTEND THE REACH OF OUR UNDERST
 
 > can you show that, **in principle**, your model can produce such outcome as a (unintentional) product of micro interactions?
 
+> whether it has some inherent dependencies between factors. whether a certain mechanism can be held responsible for some part of an outcome, etc. These are not necessarily "valid", but give you hypotheses about how things might function in the real world.
 
-
----
-
-## The problem of measurement
-
-> Change the measurement scale can completely alter the result (REF: [test of Duffuent model under different measurement scale](https://twitter.com/JustaNormalDino/status/1660560969309777920))
+> Frank Dignum from Department of Computer Science Umeå University
 
 ---
 
@@ -464,7 +482,7 @@ REF: [THE INEVITABLE “LAYERING” OF MODELS TO EXTEND THE REACH OF OUR UNDERST
 
 > Edmund Chattoe-Brown in SIMSOC email forum
 
-> Dino's reply:
+> Dino's reply about the aim of using an ABM in social science:
 
 > 1. do not tell us anything about the real world
 
@@ -474,15 +492,54 @@ REF: [THE INEVITABLE “LAYERING” OF MODELS TO EXTEND THE REACH OF OUR UNDERST
 
 > 3. show us what is likely to be the observed phenomenon
 
+  >  experimental opinion dynamics which are building a more "empirically valid" update rule; heavy work on validating models; predict some variance in temporal trend
+
 > 4. tell us how reality really works
 
-  > experimental opinion dynamics which are building a more "empirically valid" update rule
+  >  Extreme hard to reach
 
-  > heavy work on validating models
-
-  > predict some variance in temporal trensd
+> Pietro Terna: **the crucial point is to understand whether the results that emerge from the model derive from a generalizable and referable component to reality or are totally ad hoc and unrealistic.**
 
 ???
+
+---
+
+## The relationship between model and reality
+
+My understanding: the emerging phenomena simulated by ABM fits the observed one in reality which can explained by properties of your model make it useful to proceed to follow up research or interventions (scenarios design). (reflection on Frank Dignum's words)
+
+The 
+
+???
+
+---
+
+## The left-out elements of ABM design
+
+> But the value of any results we get may be compromised by the fact that a) we "should" empirically have included "the media" in our model (logically we should also explain what we leave out as well as what we put in but we don't) and b) because whatever result we find may or may not be of use in the real world depending on how we check the "applicability" of our model. If this model never "applies" then the judgements of "importance" don't get us anywhere.
+
+> Edmund Chattoe-Brown
+
+Question: In our case, we approach the pattern (UES) with residential and economic (social) mobility integreted with life course model. But, are we missing anything substantial in reality? How to validate that we make the right choice of model selection? Not only the mechanisms but also the modules.
+
+This is why I also ask the confounders in the individual paper reading questionaire. If the confounders were considered in the first place and can be introduced as a fixed intermediate variable, can we minimise the risk of deviating from the reality? For example, the 08's financial crisis on will of housing investment. But back to the research, is it even really matter to the explanaibility at all? This is a "black swan event", but a more chronic element, such as macro-level economic lifecycle, should be treated the same as unnecessary?
+
+Can it be answered by SLR?
+
+Another REF might be useful (from page 40):
+
+“Agent-Based Modeling:  The Right Mathematics for Social Science?”
+
+16th Annual Social Simulation Conference (SSC 2021), 20-24 September 2021
+
+https://www2.econ.iastate.edu/tesfatsi/KeynoteAddress.LTesfatsion.SSC2021.22Sept2021.pdf
+
+---
+
+## The problem of measurement
+
+> Change the measurement scale can completely alter the result (REF: [test of Duffuent model under different measurement scale](https://twitter.com/JustaNormalDino/status/1660560969309777920))
+
 
 
     </textarea>
