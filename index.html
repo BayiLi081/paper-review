@@ -35,12 +35,17 @@
         font-weight: bold;
       }
       h3 {
-        font-size: 1.3  em;
+        font-size: 1.3em;
       }
       h4 { font-size: 1.2em; }
       h5 { font-size: 1em; }
       h6 { font-size: 0.8em; }
-
+      blockquote { 
+        font-size: 0.8em;
+        color: #777872;
+        font-style: italic;
+        opacity: 0.7;
+      }
       .inverse {
         background: #272822;
         color: #777872;
@@ -127,6 +132,8 @@ Bayi Li
 
 ## Research structure
 
+[Over all research structure](https://raw.githubusercontent.com/BayiLi081/ABM-Economic-Inequality/main/research_design/architecture/ResearchDesignStructure.svg?token=GHSAT0AAAAAACERVRCXMCNSRL7HPXWFJPXMZFL3PBQ) (The url should grant the access to the file. Otherwise, open ABM-Economic-Inequality/main/research_design/architecture/ResearchDesignStructure.svg in this order after visiting [the original repo](https://github.com/BayiLi081/ABM-Economic-Inequality))
+
 You can find other literature review information on other pages:
 
 - [Techniques for Systematic Literature Review](https://www.bayi.in/sys-lit-review)
@@ -145,11 +152,7 @@ or
  
 ???
 
-The article simulated the urbanisation process and try to interpret it with testing different combination of mechanisms at an aggregated level. 
-
 ---
-
-<!-- Page 1.2 -->
 
 ## Searching methods
 
@@ -373,9 +376,20 @@ From
 
 ---
 
+## About the rule behaviour rule formation
+
+### Using Qualitative Data to Inform Behavioural Rules
+
+REF: [SIG-Qual2Rule: Using Qualitative Data to Inform Behavioural Rules](http://www.essa.eu.org/sig/sig-qual2rule/) and []()
+
+
+---
+
 <!-- page 4 -->
 
-## How do ABM compared to other individual modelling approaches in their ability to simulate and predict the development of segregation patterns?
+## How do ABM compared to other social modelling approaches in their ability to simulate and predict the development of segregation patterns?
+
+This insights might not be gained through this SLR, as this SLR is only focus on agent-based modelling approach. But it might be mentioned somewhere in the lit collection which worth to record somehow.
 
 ### Pros
 
@@ -395,7 +409,28 @@ A seperation of cities into different groups based on their similarity might opt
 
 <!-- page 8 -->
 
-## Reproducibility
+## Reproducibility (Replication crisis)
+
+???
+
+---
+
+# Reflection on ABM
+
+Summary from the long email forum from SIMSOC email group
+
+## The key of understanding in Agent-based models
+
+> using the model to understand the target phenomenon.
+
+Is the understanding gained through a "theory-formation" approach? (REF: [Explaining the Emerging Influence of Culture, from Individual Influences to Collective Phenomena](https://www.jasss.org/21/4/11.html))
+
+Does the model provide (additional) insights for elaborating a (new/better/more validated) theory in regards to the target system?
+
+### Layering model to extend our understanding
+
+REF: [THE INEVITABLE “LAYERING” OF MODELS TO EXTEND THE REACH OF OUR UNDERSTANDING](https://rofasss.org/2023/02/09/layering/)
+
 
 ???
 
@@ -405,6 +440,47 @@ A seperation of cities into different groups based on their similarity might opt
 
 ## Causal inference by agent-based modelling
 
+> However, we need to be extremely careful and not inflate this result. Indeed, ABMs show us that a series of rules A produces an outcome B. But the fact that we observe B in the real world, doesn’t tell us anything about the likelihood of A.
+
+> Indeed, we could produce B also with a completely different set of initial rules. Also, two ABMs that at the superficial level are completely identical may still produce very different results. The result or even dynamic behavior may be completely altered by small variations of the interaction function, numerical representation or even the measurement scale may completely alter the result.
+
+> Dino Carpentras in SIMSOC email forum
+
+> can you show that, **in principle**, your model can produce such outcome as a (unintentional) product of micro interactions?
+
+
+
+---
+
+## The problem of measurement
+
+> Change the measurement scale can completely alter the result (REF: [test of Duffuent model under different measurement scale](https://twitter.com/JustaNormalDino/status/1660560969309777920))
+
+---
+
+## The relationship between model and reality
+
+> On one hand you have questions purely about model properties: Can _a_ model generate this behaviour? Can _this_ model generate this behaviour? Could a _different_ model also have generated this behaviour? But then you have questions about the relationship between model and reality. So Schelling shows it is "possible" (surprisingly?) to have clustering and tolerance. But this "model possibility" does not buy us anything in the real world unless we can "show" that the Schelling assumptions apply in specific social domains. (And first we have to figure out what it means to do that, then how we do it practically and then actually do it.) But it may be very tempting to "slide over" this fundamental gap between model and world and think that "somehow" pure model results can be used practically. (This even goes down to a "philosophical" level: When you say an attribute in a model is an "opinion", how do you defend that claim? Why could it just as well not be a "savings account" or a "hat size?")
+
+> Edmund Chattoe-Brown in SIMSOC email forum
+
+> Dino's reply:
+
+> 1. do not tell us anything about the real world
+
+> 2. tell us what may produce some outcomes we observe in the real world
+
+  >  what may be a possible cause or contributor to a certain phenomenon
+
+> 3. show us what is likely to be the observed phenomenon
+
+> 4. tell us how reality really works
+
+  > experimental opinion dynamics which are building a more "empirically valid" update rule
+
+  > heavy work on validating models
+
+  > predict some variance in temporal trensd
 
 ???
 
