@@ -1,1 +1,26 @@
+# Ignore all files in a directory named "temp"
+temp/
+
+# Ignore all files with a specific extension, for example .tmp
+*.tmp
+
+# Ignore files in a specific directory with a particular extension
+directory_name/*.tmp
+
+# Ignore all files with tilde (~) at the end (often used by text editors)
+*~
+
+# Ignore files with a dollar sign ($) at the end (sometimes used for temporary files)
+*$
+
+# Ignore swap files created by Vim editor
+*.swp
+
+# Ignore .DS_Store files (macOS)
 .DS_Store
+
+# Ignore Thumbs.db files (Windows)
+Thumbs.db
+
+# Ignore desktop.ini files (Windows)
+desktop.ini
