@@ -24,3 +24,6 @@ Thumbs.db
 
 # Ignore desktop.ini files (Windows)
 desktop.ini
+
+# Ignore draw.io temp file
+*.bkp
