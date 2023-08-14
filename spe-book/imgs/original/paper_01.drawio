@@ -1,0 +1,93 @@
+<mxfile host="Electron" modified="2023-07-07T13:08:46.345Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.1 Chrome/112.0.5615.87 Electron/24.1.2 Safari/537.36" etag="8mF5lsnMMk2aD34yGFH0" version="21.2.1" type="device">
+  <diagram name="Page-1" id="krbeFoZhynHdB9ShZvfz">
+    <mxGraphModel dx="1026" dy="673" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-1" target="-NbrywCpfMC1y8QQkLmb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-4" value="relocate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-NbrywCpfMC1y8QQkLmb-3">
+          <mxGeometry x="0.0464" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-1" target="-NbrywCpfMC1y8QQkLmb-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-8" value="bid up" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-NbrywCpfMC1y8QQkLmb-7">
+          <mxGeometry x="-0.0785" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-1" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;Affluent families&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="384" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;areas where other affluent families live&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="240" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-6" target="-NbrywCpfMC1y8QQkLmb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-6" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;The price of&lt;br&gt;local housing&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="384" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-10" target="-NbrywCpfMC1y8QQkLmb-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-10" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;Families with lower income&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="525" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-11" target="-NbrywCpfMC1y8QQkLmb-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-14" value="displace" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-NbrywCpfMC1y8QQkLmb-13">
+          <mxGeometry x="-0.0789" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-11" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;The costs of housing (incl. rent)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-15" target="-NbrywCpfMC1y8QQkLmb-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-15" target="-NbrywCpfMC1y8QQkLmb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Outlying towns&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-18" target="-NbrywCpfMC1y8QQkLmb-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-18" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Extensive commuting hours&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="580" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-20" target="-NbrywCpfMC1y8QQkLmb-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-24" value="induce" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="-NbrywCpfMC1y8QQkLmb-23">
+          <mxGeometry x="-0.0833" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-20" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Burn out lifestyle&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="580" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-22" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Problems&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="580" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-NbrywCpfMC1y8QQkLmb-25" target="-NbrywCpfMC1y8QQkLmb-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-25" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Dwindled tax base&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-NbrywCpfMC1y8QQkLmb-27" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Public services and infrastructures&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -90,13 +90,6 @@
 
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
 
-      .image-40 img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-      }
-
       .image-50 img {
         display: block;
         margin-left: auto;
@@ -499,29 +492,17 @@ To reach the target, a scoping review questionaire is designed and hostes on [Go
 
 This form is designed for speed filling with only multiple choice questions.
 
-*Progress Update: Full text of around 35 papers has been read guided by it. Around 10 of them being unqualified because their contents are out of scope and 20+ papers have been reported through by this form*
-
-### Notes (example of further exclusion)
-
-- There are some papers regarding to transportation modelling which include residential mobility as a basis to generate trips economic behaviour (not related to socieconomic mobility) or travel behaviour (not related to relocation). It is not identifiable in the abstract, but can be found in the full paper. These will be removed from the collection. (e.g., scopus_56 and scopus_68)
-
-- There are also papers regarding to immigrants and new built up residence. But they do not discuss the housing choice, insteads they focus on the other unrelated social phenomena (e.g., travel bahaviour in scopus_69). These related variables appear in the model as a global variable or parameter rather than mechanims. These will be removed from the collection. (e.g., scopus_69)
-
-- Conditional included: scopus_77 (Yurrita et al., 2022) is the extension of theoretical paper (scopus_4), which purely focuses on technical advancement of efficiency. It is not included in the collection for further theory-based analysis, but it will seperately discussed in the technical review section.
-
-- Subjective speaking, there are some poorly designed model, although on the topic, still I wish to remove.
-
 ???
 
 Batch download full papers using Python https://medium.com/@woojingo/hacks-to-summon-research-pdf-files-into-your-local-computer-all-at-once-58860259e372
 
-<!-- ---
+---
 
 To take into account all the useful variables for implementation of our integrated approach, we developed an in-depth literature review of related agent-based models. The following table contains the variables collected from this literature review and used in our mixed method approach. We organized and divided them into global (Glo), environment (Env) and individual (Ind) variables, and categorised them by the social phenomena (economic (Eco), residential (Res)) they represent.
 
 | Variable | Social phenomena | Description | Reference |
 | --- | --- | --- | --- |
-| Glo | Eco | The ability of an individual, family or some other group to improve (or lower) their economic status—usually measured in income. | | -->
+| Glo | Eco | The ability of an individual, family or some other group to improve (or lower) their economic status—usually measured in income. | |
 
 ---
 
@@ -539,7 +520,7 @@ To take into account all the useful variables for implementation of our integrat
 
 - Segregation is observed as final outcomes, not constant dynamic pattern. For example, the path-dependence in the development of segregation.
 
-- The urban expansion (e.g., urban sprawl) was rarely considered.
+- The urban expansior (e.g., urban sprawl) was rarely considered.
 
 - Most segregation models focus on ethinical segregation, maybe also the reason that economic mobility is not valued in the model
 
@@ -568,9 +549,27 @@ The authours constructed form multi generic mechanisms, combining with baseline 
 
 ---
 
-## Notes
+<!-- Questionaire Google form -->
 
-### Tool
+## Full paper review
+
+[Scoping review question for speedreading](https://forms.gle/A5qTHjpAJsCqRCey7)
+
+[Paper evaluation online google form](https://forms.gle/29SCitDJCe5mzP9h8)
+
+## Notes (example of further exclusion)
+
+- There are some papers regarding to transportation modelling which include residential mobility as a basis to generate trips economic behaviour (not related to socieconomic mobility) or travel behaviour (not related to relocation). It is not identifiable in the abstract, but can be found in the full paper. These will be removed from the collection. (e.g., scopus_56 and scopus_68)
+
+- There are also papers regarding to immigrants and new built up residence. But they do not discuss the housing choice, insteads they focus on the other unrelated social phenomena (e.g., travel bahaviour in scopus_69). These related variables appear in the model as a global variable or parameter rather than mechanims. These will be removed from the collection. (e.g., scopus_69)
+
+- Conditional included: scopus_77 (Yurrita et al., 2022) is the extension of theoretical paper (scopus_4), which purely focuses on technical advancement of efficiency. It is not included in the collection for further theory-based analysis, but it will seperately discussed in the technical review section.
+
+???
+
+---
+
+## Tool
 
 NetLogo, as the commonly acknowledged tool, is widely applied in the collection.
 
@@ -600,20 +599,6 @@ From
 
 ---
 
-<!-- Questionaire Google form -->
-
-## Full paper review in depth
-
-[Paper evaluation online google form](https://forms.gle/29SCitDJCe5mzP9h8)
-
-*This is a extension of scoping review, where details, variables, calculations will be thoroughly investigated. This form is still developed, as I wish intake the complete inputs from the scoping review.*
-
-For example, a lot, not all, of literatures adpoted the utility theory in location selection process. I wish to further the form to summarise what variables included in the calculation. Similarly for the paper who uses microdata.
-
-???
-
----
-
 <!-- Question on travel behaviour -->
 
 ## Question?
@@ -628,9 +613,28 @@ For example, a lot, not all, of literatures adpoted the utility theory in locati
 
 ---
 
-## ABM environment setup
+## Synthetic population
 
 Among the ABM which based their env on real geographical attributes, most of them distrubuted the agents based on the census data. Only few studies specify the process of creating the synthetic population as an individual section and detail the process (Rahman Fatmi and Ahsanul Habib, 2017).
+
+
+---
+
+## Baseline synthesis (initialise the baseline model)
+
+It includes two parts: population socioeconomic synthesis environment spatial synthesis
+
+### Population socioeconomic synthesis
+
+1. Generation of synthetic population at the zonal-level (Rahman Fatmi and Ahsanul Habib, 2017), which fits the nature of the Netherlands.
+
+2. Allocation of the synthetic population to the micro-spatial unit of land parcel (standarlised lattice or the real land parcel shape depends on further review and discussion).
+
+3. Assign the socioeconomic attributes to the synthetic population based on the zonal-level data.
+
+### Environment spatial synthesis
+
+1. Assign the land use type to the land parcel based on the land use map.
 
 ---
 
@@ -729,6 +733,87 @@ REF:
 ### Reusable Building Blocks (RBBs)
 
 1. [Reusable Building Blocks for Agent-Based Modelling](https://www.rbb4abm.com/about)
+
+---
+
+# Model design
+
+I propose **Groningen, the Netherlands** as the case study of this research. The reason is that it is more a standalone city than a metropolitan region which is more suitable for the preliminary stage of this research. The migration flow in and out of the city system is easier to measure and parameterlise.
+
+## Roadmap to the prototype model
+
+A model environment that approximates the socio-demographic characteristics and spatial distribution of the population of Groningen, the Netherlands.
+
+The first study will be a mechanistic study, I do not intend these models to accurately predict real-world levels of segregation. Rather, I intend this work to highlight potential mechanisms through which social network, market behaviours and life trajectory may interact to contribute to urban economic segregation. Other mechanism mentioned will be simplified for ease of interpretation,
+
+---
+
+### Life course model
+
+The life course model will be a simplified version of the real life course with **fundamental stages and essential events**. The evolution of household (e.g., household formation, household dissolution, etc), the individual (e.g., birth, death, etc) and the social network (e.g., friendship, family tie, etc) have been investigated and validated to have impact on residential choice (). Most of them will be parameterlised based on probability distribution mirroring the emphirical data; but the evolution of social network have symmetric relation with residence location and household events, which will be modelled as a dynamic process.
+
+.image-50[![](./imgs/example_life_course.svg)]
+*Figure. An example of life trajectory, events and impact on household characteristics.*
+
+---
+
+### Life course model
+
+Micro- and macro- life events will **trigger the relocation desire** and affect the the preference and affordability of the household. These micro events refer to the life course of the household, such as the birth of a child, the death of a family member, the change of job, the change of marital status, etc; while the macro events refer to the economic and social events, such as the economic crisis, the pandemic, the war, etc. 
+
+However, the macro events will not be included for the research focus reason, but the **more consistent macro regulators** such as the interest rate, immigrants number and employment rate will be included in the exogenous dynamics section.
+
+---
+
+#### The trigger events 
+
+> Triggering events resulting from the progression in a households’ life course career can be categorised into **opportunities, problems to solve, and radical changes** (Clark & Onaka 1983; Ma et al. 2013).
+
+#### The preference
+
+The preference over the housing unit is based on the **utility of housing** (e.g., the size, the quality, the location, the price, etc), the **socialdemographic characteristics** of households and their member (e.g., the household size, composition, job location, etc) and the **social network** (e.g., the sociodemographic profile of their neighbours, the attachment of their current neighbours, etc).
+
+#### The affordability
+
+
+
+*The detail of selection of events or measurements on preference and affordability will be determined from the literature and empirical evidence.*
+
+---
+
+### Residential mobility component
+
+#### Processes
+
+- A trigger aries for the household to relocate
+
+  *The trigger is passed from other components (e.g., economic mobility component, life trajectory component)*
+
+- The household searches for the new housing unit
+
+- The household evaluates the housing unit based on utilities of housing, their preference and affordability
+
+- The household bids for the housing unit on the trade market / The household rent the housing unit from the rental market
+
+- The deal is made and the relocation is completed
+
+---
+
+### Economic mobility component
+
+---
+
+## Exogenous dynamics
+
+### Immigration
+
+### Policy interventions
+
+---
+
+## Baseline scenario
+
+
 
     </textarea>
     <script src="src/remark-latest.min.js" type="text/javascript">
